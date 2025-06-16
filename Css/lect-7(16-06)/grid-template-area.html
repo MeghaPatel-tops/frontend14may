@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container{
+            width: 100%;
+            border: 5px solid black;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:" header header header header header header"
+                                "aside aside section section section section"
+                                "footer footer footer footer footer footer";
+            justify-content: center;
+            padding: 5px;
+        }
+        .grid-item{
+            height: auto;
+            /* width: 200px; */
+            text-align: center;
+            border:3px solid blue;
+            text-align: center;
+        }
+        .comman{
+            border:5px solid skyblue;
+            background-color: rgb(115, 115, 174);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        #item-1{
+            grid-area:header ;
+           
+
+        }
+        .aside{
+            grid-area: aside;
+             height: 400px;
+            
+        }
+        .section{
+            grid-area: section;
+             height: 400px;
+
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item comman" id="item-1">MyHeader</div>
+        <div class="aside comman">
+            <h1>Aside</h1>
+        </div>
+        <div class="section comman">
+            <h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quas neque ea praesentium laborum eaque, expedita cupiditate velit sint magnam ipsa sit recusandae facilis laboriosam veniam modi consectetur et voluptas.</p></h1>
+        </div>
+        <div class="footer comman">
+            Footer
+        </div>
+        
+    </div>
+</body>
+</html>
