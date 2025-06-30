@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conatiner{
+            position: relative;
+            height: 600px;
+            background-image: url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg");
+            background-size: 100% 100%;
+            opacity: 0.9;
+        }
+        .div-text{
+                position: absolute;
+                top: 40%;
+                left: 30%;
+                align-content: center;
+        }
+        .div-text h1{
+            font-size: 4em;
+            font-weight: bolder;
+            color: black;
+            text-shadow: -5px -5px 5px white;
+            text-align: center;
+        }
+        .div-text .first{
+            color: white;
+            font-size: 3em;
+            font-weight: 5px;
+            -webkit-text-stroke: 1px black;
+            text-align: center;
+        }
+         .div-text  p{
+            margin-top: 10px;
+            text-align: center;
+         }
+        .div-text button{
+            align-content: center;
+            background-color: rgb(181, 105, 105);
+            color: white;
+            padding: 15px 30px; 
+            border: none;
+            border-radius: 20px;   
+        }
+         .div-text button:hover{
+            /* cursor: pointer; */
+            cursor: url("download.png"),pointer;
+            background-color: white;
+            color: rgb(181, 105, 105);
+            border: 5px solid rgb(181, 105, 105);
+         }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="div-text">
+            <h1>Megha Patel</h1>
+            <p class="first">Full Stack Developer and Trainner</p>
+            <p><button>Contact Me</button></p>
+        </div>
+    </div>
+</body>
+</html>
