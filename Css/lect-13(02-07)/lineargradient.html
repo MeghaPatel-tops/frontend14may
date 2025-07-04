@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 100%;
+            background:linear-gradient(to right,black,gray,white);
+        }
+        .radial{
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border: 1px solid black;
+            background: radial-gradient(circle,black 10%,gray,white);
+        }
+        .radial1{
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border: 1px solid black;
+            background: repeating-radial-gradient(circle,black,white,gray 15%)
+        }
+        .radial2{
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border: 1px solid black;
+            background: repeating-linear-gradient(black,white,gray 15%)
+        }
+        .conic{
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border: 1px solid black;
+              background-image: conic-gradient(black 90deg, white 45deg,gray);
+        }
+        .conic1{
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border: 1px solid black;
+              background-image: repeating-conic-gradient(black 10%,blue 20% );
+                /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+
+              border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="radial"></div>
+
+    <div class="radial1"></div>
+
+
+    <div class="radial2"></div>
+
+    <div class="conic"></div>
+    <div class="conic1"></div>
+</body>
+</html>

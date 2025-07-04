@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-item{
+            width: 100px;
+            text-align: center;
+            border: 1px solid white;
+            
+        }
+        .nav-item a{
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .dropdown{
+            position: relative;
+        }
+        .dropdown:hover .drop-menu{
+            display: block;
+        }
+        .drop-menu{
+            display: none;
+            position: absolute;
+            top: 20px;
+            
+            z-index: 1;
+        }
+        .drop-item{
+            
+            width: 100px;
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        .drop-item a{
+            color: black;
+        }
+        .main{
+            position: relative;
+            
+            height: 400px;
+            width: 100%;
+            background-color: green;
+        }
+        .cartdata{
+            justify-items: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item"><a href="">item-1</a></div>
+        <div class="nav-item"><a href="">item-2</a></div>
+        <div class="nav-item"><a href="">item-3</a></div>
+        <div class="nav-item"><a href="">item-4</a></div>
+        <div class="nav-item dropdown"><a href="">item-5
+            <span><i class="fa fa-caret-down" aria-hidden="true" style="font-size: 20px;"></i>
+                </span></a>
+              <div class="drop-menu">
+                    <div class="drop-item"><a href="">Home-1</a></div>
+                    <div class="drop-item"><a href="">Home-2</a></div>
+                    <div class="drop-item"><a href="">Home-3</a></div>
+              </div>    
+        </div>
+        <div class="nav-item cartdata">
+            <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+            </div>
+    </div>
+    <div class="main"></div>
+</body>
+</html>
