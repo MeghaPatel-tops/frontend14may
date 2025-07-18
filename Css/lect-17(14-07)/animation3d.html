@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        #box1:hover{
+            transform: translate3d(50px,80px,50px);
+        }
+        #box2:hover{
+            transform: rotate3d(1,2,1,45deg);
+        }
+        #box3:hover{
+            transform: scale3d(0.5,0.5,0.5);
+        }
+        #box4:hover{
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tanslate </h1>
+    <div class="box" id="box1">
+    </div>
+    
+    <h1>Rotate </h1>
+    <div class="box" id="box2">
+    </div>
+
+    
+    <h1>Scale </h1>
+    <div class="box" id="box3">
+    </div>
+
+    
+    <h1>Skew </h1>
+    <div class="box" id="box4">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 100%;
+            border: 5px solid black;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 3px solid blue;
+        }
+        @media screen and (max-width:1025px) and (min-width:768px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media screen and (max-width:767px) and (min-width:480px){
+            .container{
+                
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media screen and (max-width:480px){
+            .container{
+                
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media screen and (max-width:320px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+        <div class="box" id="box-4"></div>
+        <div class="box" id="box-5"></div>
+        <div class="box" id="box-6"></div>
+        <div class="box" id="box-7"></div>
+        <div class="box" id="box-8"></div>
+        <div class="box" id="box-9"></div>
+        <div class="box" id="box-10"></div>
+    </div>
+</body>
+</html>

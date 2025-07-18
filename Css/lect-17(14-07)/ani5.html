@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outer{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border: 5px solid black;
+            border-radius: 50%;
+            animation-name: main;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        .inner{
+            transform: rotate(-30deg);
+            background-image: url("car-removebg-preview.png");
+            background-size: 100% 100%;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            /* background-color: red; */
+            position: absolute;
+            /* animation-name: divmove;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+            animation-timing-function: ease; */
+
+        }
+
+        @keyframes main {
+            from{
+                rotate: 0deg;
+            }
+            to{
+                rotate: 360deg;
+            }
+            
+        }
+
+        @keyframes divmove{
+            0%{
+                /* left: 300px; */
+                transform: rotate(90deg);
+                rotate: 90deg;
+            }
+            25%{
+                /* top:300px;
+                left:300px; */
+                rotate: 180deg;
+            }
+            75%{
+                /* left:0;
+                top: 300px; */
+                rotate: 270deg;
+            }
+            100%{
+                /* left: 0;
+                top: 0; */
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

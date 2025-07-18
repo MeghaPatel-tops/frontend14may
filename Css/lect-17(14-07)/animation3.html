@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border: 5px solid black;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            animation-name: divmove;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 4;
+            animation-direction:normal;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        @keyframes divmove{
+            0%{
+                left: 300px;
+            }
+            25%{
+                top:300px;
+                left:300px
+            }
+            75%{
+                left:0;
+                top: 300px;
+            }
+            100%{
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

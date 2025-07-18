@@ -1,0 +1,83 @@
+@media screen and (max-width:573px) {
+
+    /*  */
+
+    .main::-webkit-scrollbar{
+        display: none;
+    }
+   
+    .main{
+        padding: 5px;
+        height: auto;
+    }
+    
+.navbar{
+    height: auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.nav-itemlist{
+    
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.nav-item{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+.nav-item a{
+    
+    color: white;
+    font-size: 2em;
+    -webkit-text-stroke: 1px red;
+}
+
+
+    .hero-text{
+        position: absolute;
+        top: 450px;
+    }
+    .hero-img{
+        position: relative;
+        height: 900px;
+    }
+
+.foodlog{
+    position: relative;
+    top: 20px;
+    width: 100%;
+  
+}
+
+
+.food-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.service-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.service-img .img2{
+    align-self: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+}
